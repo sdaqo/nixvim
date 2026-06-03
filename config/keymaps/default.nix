@@ -28,5 +28,11 @@
         desc = "Escape terminal mode";
       };
     }
+    {
+      mode = ["n"];
+      key = ";";
+      action = ":";
+      options.desc = "Enter command mode";
+    }
   ];
 }

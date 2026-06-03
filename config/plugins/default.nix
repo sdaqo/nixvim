@@ -13,6 +13,7 @@
     ./lightline.nix
     ./toggleterm.nix
     ./oil.nix
+    ./neogen.nix
     ./lsp
   ];
 
