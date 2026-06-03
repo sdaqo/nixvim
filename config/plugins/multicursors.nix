@@ -1,4 +1,8 @@
-{pkgs, lib, ...}: let
+{
+  pkgs,
+  lib,
+  ...
+}: let
   ut = lib.nixvim;
 in {
   extraPlugins = [
@@ -28,49 +32,49 @@ in {
 
   keymaps = [
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<up>";
       action = ut.mkRaw ''function() require("multicursor-nvim").lineAddCursor(-1) end'';
       options.desc = "Add cursor above";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<down>";
       action = ut.mkRaw ''function() require("multicursor-nvim").lineAddCursor(1) end'';
       options.desc = "Add cursor below";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader><up>";
       action = ut.mkRaw ''function() require("multicursor-nvim").lineSkipCursor(-1) end'';
       options.desc = "Skip cursor above";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader><down>";
       action = ut.mkRaw ''function() require("multicursor-nvim").lineSkipCursor(1) end'';
       options.desc = "Skip cursor below";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>n";
       action = ut.mkRaw ''function() require("multicursor-nvim").matchAddCursor(1) end'';
       options.desc = "Add cursor by matching selection";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>s";
       action = ut.mkRaw ''function() require("multicursor-nvim").matchSkipCursor(1) end'';
       options.desc = "Skip matching cursor";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>N";
       action = ut.mkRaw ''function() require("multicursor-nvim").matchAddCursor(-1) end'';
       options.desc = "Add previous matching cursor";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>S";
       action = ut.mkRaw ''function() require("multicursor-nvim").matchSkipCursor(-1) end'';
       options.desc = "Skip previous matching cursor";
@@ -95,7 +99,7 @@ in {
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<C-q>";
       action = ut.mkRaw ''function() require("multicursor-nvim").toggleCursor() end'';
       options.desc = "Toggle cursor";
@@ -122,14 +126,14 @@ in {
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "ga";
       action = ut.mkRaw ''function() require("multicursor-nvim").addCursorOperator() end'';
       options.desc = "Add cursors using operator";
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader><C-q>";
       action = ut.mkRaw ''function() require("multicursor-nvim").duplicateCursors() end'';
       options.desc = "Duplicate cursors";
@@ -157,46 +161,46 @@ in {
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>A";
       action = ut.mkRaw ''function() require("multicursor-nvim").matchAllAddCursors() end'';
       options.desc = "Add cursors to all matches";
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "<leader>m";
       action = ut.mkRaw ''function() require("multicursor-nvim").operator() end'';
       options.desc = "Multicursor operator";
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "]d";
       action = ut.mkRaw ''function() require("multicursor-nvim").diagnosticAddCursor(1) end'';
       options.desc = "Add cursor at next diagnostic";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "[d";
       action = ut.mkRaw ''function() require("multicursor-nvim").diagnosticAddCursor(-1) end'';
       options.desc = "Add cursor at previous diagnostic";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "]s";
       action = ut.mkRaw ''function() require("multicursor-nvim").diagnosticSkipCursor(1) end'';
       options.desc = "Skip next diagnostic";
     }
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "[S";
       action = ut.mkRaw ''function() require("multicursor-nvim").diagnosticSkipCursor(-1) end'';
       options.desc = "Skip previous diagnostic";
     }
 
     {
-      mode = [ "n" "x" ];
+      mode = ["n" "x"];
       key = "md";
       action = ut.mkRaw ''
         function()
@@ -204,7 +208,7 @@ in {
             severity = vim.diagnostic.severity.ERROR,
             })
         end
-        '';
+      '';
       options.desc = "Add cursors to error diagnostics";
     }
   ];

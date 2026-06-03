@@ -1,20 +1,32 @@
-{pkgs, lib, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   plugins.conform-nvim = {
     enable = true;
     settings = {
-      formatters_by_ft = {
-        java = [ "google-java-format" ];
-        python = [ "black" ];
-        lua = [ "stylua" ];
-        nix = [ "alejandra" ];
-        rust = [ "rustfmt" ];
-        json = [ "jq" ];
-        bash = [ "shellcheck" "shellharden" "shfmt" ];
-        yaml = [ "yamlfmt" ];
-        "_" = [ "trim_whitespace" ];
-      } // (builtins.mapAttrs (n: v: ["prettierd" "prettier"]) {
-          html = 0; css = 0; javascript = 0; javascriptreact = 0; typescript = 0; typescriptreact = 0; markdown = 0;
-      });
+      formatters_by_ft =
+        {
+          java = ["google-java-format"];
+          python = ["black"];
+          lua = ["stylua"];
+          nix = ["alejandra"];
+          rust = ["rustfmt"];
+          json = ["jq"];
+          bash = ["shellcheck" "shellharden" "shfmt"];
+          yaml = ["yamlfmt"];
+          "_" = ["trim_whitespace"];
+        }
+        // (builtins.mapAttrs (n: v: ["prettierd" "prettier"]) {
+          html = 0;
+          css = 0;
+          javascript = 0;
+          javascriptreact = 0;
+          typescript = 0;
+          typescriptreact = 0;
+          markdown = 0;
+        });
 
       formatters = {
         google-java-format.command = "${lib.getExe pkgs.google-java-format}";

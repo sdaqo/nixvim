@@ -1,5 +1,5 @@
 {
-  plugins.oil = { 
+  plugins.oil = {
     enable = true;
     settings = {
       default_file_explorer = true;

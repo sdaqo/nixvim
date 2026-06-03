@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       opleader.line = "<leader>/";
-      toggler.line = "<leader>/"; 
+      toggler.line = "<leader>/";
     };
   };
 }

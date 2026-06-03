@@ -8,7 +8,7 @@
   globals.mapleader = " ";
   keymaps = [
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = ";";
       action = ":";
       options = {
@@ -19,7 +19,7 @@
       };
     }
     {
-      mode = [ "t" ];
+      mode = ["t"];
       key = "<Esc>";
       action = "<C-\\><C-n>";
       options = {

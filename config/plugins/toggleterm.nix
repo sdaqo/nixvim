@@ -20,10 +20,10 @@
       insert_mappings = true;
       close_on_exit = true;
       direction = "horizontal"; # 'vertical' | 'horizontal' | 'window' | 'float'
-        auto_scroll = true;
+      auto_scroll = true;
       float_opts = {
         border = "single"; # 'single' | 'double' | 'shadow' | 'curved' | ... other options supported by win open
-          width = 80;
+        width = 80;
         height = 20;
         winblend = 0;
       };
@@ -33,7 +33,7 @@
           function(term)
           return term.name
           end
-          '';
+        '';
       };
     };
   };

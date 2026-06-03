@@ -1,7 +1,7 @@
 {
   keymaps = [
     {
-      mode = [ "v" ];
+      mode = ["v"];
       key = "<";
       action = "<gv";
       options = {
@@ -11,7 +11,7 @@
       };
     }
     {
-      mode = [ "v" ];
+      mode = ["v"];
       key = ">";
       action = ">gv";
       options = {
@@ -49,7 +49,7 @@
       };
     }
     {
-      mode = [ "x" ];
+      mode = ["x"];
       key = "p";
       action = "p:let @+=@0<CR>:let @\"=@0<CR>";
       options = {
@@ -59,7 +59,7 @@
       };
     }
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = "<Esc>";
       action = "<cmd> noh <CR>";
       options = {

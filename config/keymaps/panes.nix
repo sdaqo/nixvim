@@ -1,7 +1,7 @@
 {
   keymaps = [
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = "<C-h>";
       action = "<C-w>h";
       options = {
@@ -11,7 +11,7 @@
       };
     }
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = "<C-l>";
       action = "<C-w>l";
       options = {
@@ -21,7 +21,7 @@
       };
     }
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = "<C-j>";
       action = "<C-w>j";
       options = {
@@ -31,7 +31,7 @@
       };
     }
     {
-      mode = [ "n" ];
+      mode = ["n"];
       key = "<C-k>";
       action = "<C-w>k";
       options = {

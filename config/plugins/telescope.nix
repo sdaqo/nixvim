@@ -1,5 +1,5 @@
 {
-  plugins.telescope = { 
+  plugins.telescope = {
     enable = true;
 
     extensions = {

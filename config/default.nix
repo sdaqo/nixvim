@@ -1,9 +1,9 @@
 {pkgs, ...}: {
-  imports = [ 
-    ./plugins 
-    ./keymaps 
-    ./options.nix 
+  imports = [
+    ./plugins
+    ./keymaps
+    ./options.nix
   ];
 
-  extraPackages = [ pkgs.ripgrep ];
+  extraPackages = [pkgs.ripgrep];
 }

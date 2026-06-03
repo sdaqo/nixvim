@@ -1,11 +1,15 @@
-{pkgs, lib, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./blink-cmp.nix
     ./conform.nix
     ./luasnip.nix
   ];
 
-  extraPackages = [ pkgs.rustc pkgs.cargo ];
+  extraPackages = [pkgs.rustc pkgs.cargo];
 
   plugins.lspconfig.enable = true;
   lsp = {
