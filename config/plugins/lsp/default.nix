@@ -9,7 +9,7 @@
     ./luasnip.nix
   ];
 
-  extraPackages = [pkgs.rustc pkgs.cargo];
+  extraPackages = [pkgs.rustc pkgs.cargo pkgs.go];
 
   plugins.lspconfig.enable = true;
   lsp = {
