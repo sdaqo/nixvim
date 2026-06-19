@@ -8,17 +8,6 @@
   globals.mapleader = " ";
   keymaps = [
     {
-      mode = ["n"];
-      key = ";";
-      action = ":";
-      options = {
-        silent = true;
-        noremap = true;
-        nowait = true;
-        desc = "Hello World!";
-      };
-    }
-    {
       mode = ["t"];
       key = "<Esc>";
       action = "<C-\\><C-n>";
@@ -27,12 +16,6 @@
         noremap = true;
         desc = "Escape terminal mode";
       };
-    }
-    {
-      mode = ["n"];
-      key = ";";
-      action = ":";
-      options.desc = "Enter command mode";
     }
   ];
 }
