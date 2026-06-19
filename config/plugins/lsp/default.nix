@@ -65,17 +65,17 @@
         options.desc = "Previous LSP Diagnostic";
       }
       {
-        action = "<CMD>LspStop<Enter>";
+        action = "<CMD>lsp stop<Enter>";
         key = "<leader>lx";
         options.desc = "Stop LSP";
       }
       {
-        action = "<CMD>LspStart<Enter>";
+        action = "<CMD>lsp start<Enter>";
         key = "<leader>ls";
         options.desc = "Start LSP";
       }
       {
-        action = "<CMD>LspRestart<Enter>";
+        action = "<CMD>lsp restart<Enter>";
         key = "<leader>lr";
         options.desc = "Restart LSP";
       }
