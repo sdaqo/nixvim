@@ -19,10 +19,12 @@
       cssls.enable = true;
       lua_ls.enable = true;
       jsonls.enable = true;
+      jdtls.enable = true;
       ts_ls.enable = true;
       clangd.enable = true;
       pyright.enable = true;
       yamlls.enable = true;
+      vue_ls.enable = true;
       nixd.enable = true;
       gopls.enable = true;
       eslint.enable = true;
