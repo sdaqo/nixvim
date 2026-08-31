@@ -112,5 +112,17 @@
         desc = "Move up";
       };
     }
+    {
+      mode = [
+        "n"
+      ];
+      key = "<Tab>";
+      action = "<cmd>tabnext<cr>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Next Tab";
+      };
+    }
   ];
 }
