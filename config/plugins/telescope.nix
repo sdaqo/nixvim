@@ -2,6 +2,21 @@
   plugins.telescope = {
     enable = true;
 
+    settings = {
+      defaults = {
+        mappings = {
+          i = {
+            "<C-j>" = "move_selection_next";
+            "<C-k>" = "move_selection_previous";
+          };
+          n = {
+            "<C-j>" = "move_selection_next";
+            "<C-k>" = "move_selection_previous";
+          };
+        };
+      };
+    };
+
     extensions = {
       fzf-native = {
         enable = true;
@@ -17,6 +32,7 @@
         enable = true;
       };
     };
+
     keymaps = {
       "<leader><space>" = {
         action = "find_files";
