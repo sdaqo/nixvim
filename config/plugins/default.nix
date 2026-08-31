@@ -14,6 +14,7 @@
     ./toggleterm.nix
     ./oil.nix
     ./neogen.nix
+    ./compile-mode.nix
     ./lsp
   ];
 
