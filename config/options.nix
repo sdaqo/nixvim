@@ -34,5 +34,9 @@
     termguicolors = lib.mkForce pkgs.stdenv.isLinux;
   };
 
-  colorschemes.tokyonight.enable = true;
+  extraPlugins = [ pkgs.vimPlugins.gruber-darker-nvim ];
+
+  extraConfigLua = ''
+    vim.cmd.colorscheme("gruber-darker")
+  '';
 }
