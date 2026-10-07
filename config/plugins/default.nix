@@ -25,5 +25,6 @@
     auto-save.enable = true;
     web-devicons.enable = true;
     better-escape.enable = true;
+    typst-preview.enable = true;
   };
 }

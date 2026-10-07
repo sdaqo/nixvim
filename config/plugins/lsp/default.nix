@@ -9,7 +9,7 @@
     ./luasnip.nix
   ];
 
-  extraPackages = [pkgs.rustc pkgs.cargo pkgs.go];
+  extraPackages = [pkgs.rustc pkgs.cargo pkgs.go pkgs.typst];
 
   plugins.lspconfig.enable = true;
   lsp = {
@@ -29,6 +29,7 @@
       gopls.enable = true;
       eslint.enable = true;
       rust_analyzer.enable = true;
+      typst_lsp.enable = true;
     };
     keymaps = [
       {
