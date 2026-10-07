@@ -16,6 +16,7 @@
           json = ["jq"];
           bash = ["shellcheck" "shellharden" "shfmt"];
           yaml = ["yamlfmt"];
+          typst = ["typstyle"];
           "_" = ["trim_whitespace"];
         }
         // (builtins.mapAttrs (n: v: ["prettierd" "prettier"]) {
@@ -40,6 +41,7 @@
         shellharden.command = "${lib.getExe pkgs.shellharden}";
         shfmt.command = "${lib.getExe pkgs.shfmt}";
         yamlfmt.command = "${lib.getExe pkgs.yamlfmt}";
+        typstyle.command = "${lib.getExe pkgs.typstyle}";
       };
     };
   };
