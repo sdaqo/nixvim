@@ -17,5 +17,15 @@
         desc = "Escape terminal mode";
       };
     }
+    {
+      mode = ["n"];
+      key = "<leader>q";
+      action = "<cmd>:enew<bar>bd<cr>";
+      options = {
+        silent = true;
+        noremap = true;
+        desc = "Close current buffer/tab/window";
+      };
+    }
   ];
 }
