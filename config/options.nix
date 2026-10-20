@@ -25,6 +25,10 @@
     swapfile = true;
     updatetime = 200;
     undofile = true;
+    autoread = true;
+    backup = false;
+    writebackup = false;
+    backupcopy = "yes";
 
     mouse = "a";
     fillchars = {
