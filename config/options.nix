@@ -35,7 +35,7 @@
       eob = " ";
     };
 
-    termguicolors = lib.mkForce pkgs.stdenv.isLinux;
+    termguicolors = lib.mkForce pkgs.stdenv.hostPlatform.isLinux;
   };
 
   extraPlugins = [ pkgs.vimPlugins.gruber-darker-nvim ];
