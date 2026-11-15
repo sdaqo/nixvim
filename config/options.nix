@@ -43,4 +43,43 @@
   extraConfigLua = ''
     vim.cmd.colorscheme("gruber-darker")
   '';
+
+  autoGroups = {
+    alacritty = {
+      clear = true;
+    };
+  };
+
+  autoCmd = [
+    {
+      callback = { 
+        __raw = ''
+          function()
+            vim.fn.system(
+              "alacritty msg --socket $ALACRITTY_SOCKET config -w $ALACRITTY_WINDOW_ID options 'window.padding.x=0' 'window.padding.y=0' 'window.dynamic_padding=true'"
+            )
+          end
+        ''; 
+      };
+      event = [
+        "VimEnter"
+      ];
+      group = "alacritty";
+    }
+    {
+      callback = { 
+        __raw = ''
+          function()
+            vim.fn.system(
+              'alacritty msg --socket $ALACRITTY_SOCKET config -w $ALACRITTY_WINDOW_ID -r', { detach = true }
+            )
+          end
+        ''; 
+      };
+      event = [
+        "VimLeavePre"
+      ];
+      group = "alacritty";
+    }
+  ];
 }
